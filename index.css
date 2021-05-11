@@ -25,7 +25,7 @@
   color: #000000;
 }
 
-.search {
+.searchnav {
   position: absolute;
   width: 125px;
   height: 17px;
@@ -70,6 +70,50 @@
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.searchbarelemnt {
+  width: 49px;
+  height: 15px;
+  left: 65px;
+  top: calc(50% - 15px / 2 - 0.5px);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #49627e;
+  white-space: nowrap;
+}
+
+.searchbutton {
+  width: 89px;
+  height: 60px;
+  left: 1071px;
+  top: 0px;
+
+  background: #0070fb;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.search {
+  position: absolute;
+  width: 48px;
+  height: 17px;
+  left: 1092px;
+  top: calc(50% - 17px / 2 + 0.5px);
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
 }
 
 .city {
@@ -83,7 +127,6 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
 
   display: flex;
   align-items: center;
@@ -92,6 +135,7 @@
 }
 
 .vacancy {
+  position: relative;
   width: 460px;
   height: 133px;
   left: 140px;
@@ -102,7 +146,40 @@
   border-radius: 10px;
 }
 
+.container {
+  position: absolute;
+  width: 660px;
+  height: 587px;
+  left: 640px;
+  top: 208px;
+
+  background: #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+}
+
+.description {
+  position: absolute;
+  width: 591px;
+  height: 840px;
+  left: 41px;
+  top: 100px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
 .companyName {
+  position: absolute;
   width: 239px;
   height: 12px;
   left: 103px;
@@ -119,14 +196,133 @@
   color: #9aaab5;
 }
 
-.container {
+.vacancyName {
   position: absolute;
-  width: 660px;
-  height: 587px;
-  left: 640px;
-  top: 208px;
+  width: 176px;
+  height: 17px;
+  left: 103px;
+  top: 37px;
 
-  background: #ffffff;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
-  border-radius: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  white-space: nowrap;
+}
+
+.vacancyCity {
+  position: absolute;
+  width: 41px;
+  height: 12px;
+  left: 103px;
+  top: 57px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+
+  color: #9aaab5;
+}
+
+.date {
+  position: absolute;
+  width: 48px;
+  height: 11px;
+  left: 392px;
+  top: 110px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #a1aeb9;
+}
+
+.currentVacancy {
+  position: absolute;
+  width: 288px;
+  height: 24px;
+  left: 211px;
+  top: 43px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.salary {
+  position: absolute;
+  width: 287px;
+  height: 24px;
+  left: 30px;
+  top: 134px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.currentCompany {
+  position: absolute;
+  width: 50px;
+  height: 12px;
+  left: 211px;
+  top: 75px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+
+  color: #9aaab5;
+}
+
+.currentCity {
+  position: absolute;
+  width: 41px;
+  height: 12px;
+  left: 286px;
+  top: 75px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+
+  color: #9aaab5;
 }
